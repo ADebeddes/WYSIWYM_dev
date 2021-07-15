@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.wysiwym_api.beans.SimilarityParametersBean;
 import com.wysiwym_api.beans.SimilarityResultBean;
 
-@FeignClient(name = "lds", url = "localhost:9001")
+@FeignClient(name = "lds", url = "https://wysiwym-lds-service.herokuapp.com")
 //@RibbonClient(name ="lds")
 public interface LdsProxy {
 	@PostMapping(value = "/similarity", consumes = "application/json", produces = "application/json")
