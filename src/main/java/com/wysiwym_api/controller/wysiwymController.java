@@ -27,16 +27,6 @@ public class wysiwymController {
 	@Autowired
 	MeasuresProxy measuresProxy;
 	
-	@RequestMapping("/")
-	public String acceuil(Model model) throws Exception {
-		
-		ArrayList<MeasuresResultBean> mesures =measuresProxy.getMicroMeasures();
-		
-		model.addAttribute("mesures",mesures);
-		
-		return "Acceuil";
-	}
-	
 	@PostMapping(value = "/similarity", consumes = "application/json", produces = "application/json")
 	@ResponseBody
 	public SimilarityResultBean lds(Model model,@RequestBody SimilarityParametersBean params) throws Exception {
