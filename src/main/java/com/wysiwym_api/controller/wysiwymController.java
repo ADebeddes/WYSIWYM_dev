@@ -54,6 +54,9 @@ public class wysiwymController {
 	@PostMapping(value = "/measures/getMicroMeasures",produces ="application/json")
 	public ArrayList<MeasuresResultBean> getMicroMeasures() throws Exception {
 		ArrayList<MeasuresResultBean> mesures =measuresProxy.getMicroMeasures();
+		for(MeasuresResultBean m:mesures){
+			System.out.println(m);
+		}
 		return mesures;
 	}
 	
