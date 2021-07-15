@@ -11,7 +11,7 @@ import com.wysiwym_api.beans.MeasuresResultBean;
 import com.wysiwym_api.beans.MicroMeasureParametersBean;
 import com.wysiwym_api.beans.MicroMeasureResultBean;
 
-@FeignClient(name = "measures", url = "localhost:9002")
+@FeignClient(name = "measures", url = "https://wysiwym-measure-service.herokuapp.com")
 public interface MeasuresProxy {
 	@PostMapping(value = "/getMeasures",produces ="application/json")
 	ArrayList<MeasuresResultBean> getMeasures() throws Exception;
