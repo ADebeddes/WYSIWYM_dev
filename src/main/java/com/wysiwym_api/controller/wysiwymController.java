@@ -46,13 +46,13 @@ public class wysiwymController {
 	}
 	
 	@PostMapping(value = "/measures/getMeasures",produces ="application/json")
-	public ArrayList<MeasuresResultBean> getMeasures(Model model) throws Exception {
+	public ArrayList<MeasuresResultBean> getMeasures() throws Exception {
 		ArrayList<MeasuresResultBean> mesures =measuresProxy.getMeasures();
 		return mesures;
 	}
 	
 	@PostMapping(value = "/measures/getMicroMeasures",produces ="application/json")
-	public ArrayList<MeasuresResultBean> getMicroMeasures(Model model) throws Exception {
+	public ArrayList<MeasuresResultBean> getMicroMeasures() throws Exception {
 		ArrayList<MeasuresResultBean> mesures =measuresProxy.getMicroMeasures();
 		return mesures;
 	}
