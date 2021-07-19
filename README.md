@@ -11,7 +11,7 @@ Celui utilise les service lds et mesure disponible sur mon profil afin d'accéde
 https://wysiwym-api.herokuapp.com/measures/getMicroMeasures
 https://wysiwym-api.herokuapp.com/measures/getMeasures
 
-3-Pour créer votre propre micro mesures il faut fournir des éléments semblable à ceux d'une mesure déjà implémenter:
+3-Pour créer votre propre micro mesures il faut envoyer une requêtes de type POST et fournir des éléments semblable à ceux d'une mesure déjà implémenter:
 - Le Dataset à utiliser contenant le nom, les préfixes, le lien, le graph par défaut et l'url de base pour chaque ressource.
 - Les ressources à comparer et la propriété à comparer.
 - Diverses options comportant le poids de votre micro mesure ainsi que le type de mesure à effectuer sur les ressources fournies.
